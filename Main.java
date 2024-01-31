@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 class Main {
     public static void main(String[] args) {
         // System.out.println("Hello World");
@@ -50,24 +53,55 @@ class Main {
         // System.out.println(number);
 
         char ch = (char)65;   //
-        System.out.println(ch);
+        // System.out.println(ch);
 
         // Add Chars
-        System.out.println("A" + "B");   // 131 addition
-        System.out.println("A" + "B");   // AB concatenation
+        // System.out.println("A" + "B");   // 131 addition
+        // System.out.println("A" + "B");   // AB concatenation
         // Important understanding of how important are these short and long datatype
 
         // Add Strings
         boolean x;  // Creating a variable
         x = true;  // Assign a value of later
         boolean y = false;  // Initialisation(creating + assigning value)
-        System.out.println(x);
-        System.out.println(y);
+        // System.out.println(x);
+        // System.out.println(y);
 
 
         // *************Arithmetic Operators (+, -, *, /, %) ***************************//
+        // System.out.println(5 + 4); // 9
+        // System.out.println(5 - 4); // 1
+        // System.out.println(5 * 4); // 20
+        // System.out.println(10/3); //3 (int/ int => int)
+        // System.out.println((float)10/3);  // float -> less precision
+        // System.out.println(10.0f/3);  // float -> less precision
+        // System.out.println(10.0/3); // double -> more precision
 
+
+
+        // **********Modulo Operator*************//
+        // System.out.println(17%3);  // modulo
+
+        // Input (assignments)
+        // Build a Scanner and then use it, these are the two steps in input 
+
+        Scanner sc = new Scanner(System.in); // magical line (remember)
         
+        // Use scanner to read input data
+        // int isRainy = sc.nextInt();  // reads the next integer input from custom integer
+        // System.out.println(isRainy);
+
+        // int x1 = sc.nextInt();
+        // int x2 = sc.nextInt();
+
+        // System.out.println(x1 + x2);
+
+        int mymoney = sc.nextInt();
+        System.out.println("money " + mymoney);
+
+        // String
+        String name = sc.next();
+        string.out.print("Hello " + name);
         
     }
 }
